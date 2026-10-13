@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { logoutAction } from "@/features/auth/actions";
 import { CommandPalette } from "@/components/command-palette";
+import { ProductGuide } from "@/components/product-guide";
 import { ThemeToggle } from "@/components/theme-toggle";
 import type { Membership, SessionUser } from "@/types/domain";
 
@@ -64,6 +65,7 @@ export function AppShell({
             {membership.role} · {membership.plan} · ⌘K
           </p>
           <div className="flex items-center gap-2">
+            <ProductGuide placement="menu" />
             <ThemeToggle />
             <span className="text-sm">{user.displayName}</span>
             <form action={logoutAction}>
