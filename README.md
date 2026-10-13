@@ -14,6 +14,22 @@ customers, revenue, or production traffic.
 **Next.js 16 · React 19 · TypeScript · Tailwind CSS 4 · Drizzle · PGlite /
 Postgres · Zod · Stripe adapter (optional) · Supabase SQL + RLS (optional)**
 
+## Preview
+
+This is a web app. There is no separate desktop executable. Download the source, install it, and open it in a browser.
+
+[Download the source (zip)](https://github.com/alexalghisi/agenttower/archive/refs/heads/main.zip)
+
+```bash
+npm install
+npm run seed
+npm run dev
+```
+
+Then open [http://localhost:3000](http://localhost:3000). The landing page, including the goal guide:
+
+![AgentTower landing page after npm run dev](docs/preview-landing.png)
+
 ---
 
 ## Author
@@ -69,6 +85,7 @@ AgentTower is a thin, honest slice of that job:
 - Seeded Harborline Labs demo: 3 projects, 8 agents, 540 traces
 - Supabase SQL + RLS migrations for a hosted deploy
 - Auth errors surfaced on `/login` and `/signup` (same destructive text as onboarding)
+- Landing guide in English, Romanian, German, French, Spanish, and Italian, with a language lock and five goals you can check off
 
 ## Planned (not built)
 
@@ -257,6 +274,7 @@ npm run dev          # http://localhost:3000
 npm run build
 npm run lint
 npm run typecheck
+npm run test
 npm run seed
 ```
 
