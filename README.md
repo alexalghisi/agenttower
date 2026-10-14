@@ -16,9 +16,9 @@ Postgres · Zod · Stripe adapter (optional) · Supabase SQL + RLS (optional)**
 
 ## Preview
 
-This is a web app. There is no separate desktop executable. Download the source, install it, and open it in a browser.
+This is a web app. There is no separate desktop executable. Download a release, install it, and open it in a browser.
 
-[Download the source (zip)](https://github.com/alexalghisi/agenttower/archive/refs/heads/main.zip)
+[Latest release](https://github.com/alexalghisi/agenttower/releases/latest) · [Source zip](https://github.com/alexalghisi/agenttower/archive/refs/heads/main.zip)
 
 ```bash
 npm install
