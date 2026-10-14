@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Activity, CircleDollarSign, Shield, TowerControl, Workflow } from "lucide-react";
+import { ProductGuide } from "@/components/product-guide";
 import { Button } from "@/components/ui/button";
 import { PLAN_CATALOG } from "@/lib/billing/plans";
 
@@ -31,6 +32,7 @@ export default function MarketingPage() {
           AgentTower
         </div>
         <nav className="hidden items-center gap-6 text-sm text-muted-foreground md:flex">
+          <a href="#guide">Guide</a>
           <a href="#product">Product</a>
           <a href="#pricing">Pricing</a>
           <a href="#faq">FAQ</a>
@@ -65,6 +67,8 @@ export default function MarketingPage() {
           Demo workspace: <code>demo@agenttower.dev</code> / <code>DemoPass123!</code>
         </p>
       </section>
+
+      <ProductGuide />
 
       <section id="product" className="border-y border-border bg-card/40">
         <div className="mx-auto grid max-w-6xl gap-6 px-6 py-16 md:grid-cols-2 lg:grid-cols-4">
