@@ -184,7 +184,7 @@ Open [http://localhost:3000](http://localhost:3000).
 | ---------- | -------------------------------------------- |
 | Email      | `demo@agenttower.dev`                        |
 | Password   | `DemoPass123!`                               |
-| API key    | `at_live_0f8c2e91a7b64d3c9e1a2b4c6d8e0f12`   |
+| API key    | printed by `npm run seed`                    |
 
 Reseed by deleting `.data/pglite` and running `npm run seed` again.
 
@@ -209,8 +209,11 @@ Reseed by deleting `.data/pglite` and running `npm run seed` again.
 Idempotent on `traceId` for the API key’s organization. Repeat the same id → `200` and the existing run, not a duplicate.
 
 ```bash
+# API key from `npm run seed` or Settings → API keys
+export AGENTTOWER_API_KEY=...
+
 curl -X POST http://localhost:3000/api/v1/runs \
-  -H "Authorization: Bearer at_live_0f8c2e91a7b64d3c9e1a2b4c6d8e0f12" \
+  -H "Authorization: Bearer $AGENTTOWER_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
     "traceId": "tr_manual_001",
